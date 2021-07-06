@@ -7,8 +7,11 @@
       </transition>
       <div class="footer">
         <p v-html="website.website_footer"></p>
-        <p>Powered by <a href="https://github.com/QingdaoU/OnlineJudge">OnlineJudge</a>
-          <span v-if="version">&nbsp; Version: {{ version }}</span>
+        <p>
+          <a href="https://t.me/ilmhuboj">
+            <font-awesome-icon :icon="['fab', 'telegram-plane']" />
+            <span v-if="version">&nbsp; Follow us!</span>
+          </a>
         </p>
       </div>
     </div>

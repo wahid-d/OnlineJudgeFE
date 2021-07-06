@@ -32,6 +32,13 @@ import 'echarts/lib/component/tooltip'
 import 'echarts/lib/component/toolbox'
 import 'echarts/lib/component/markPoint'
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faTelegramPlane } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+library.add(faTelegramPlane)
+Vue.component('font-awesome-icon', FontAwesomeIcon)
+
 // register global utility filters.
 Object.keys(filters).forEach(key => {
   Vue.filter(key, filters[key])
